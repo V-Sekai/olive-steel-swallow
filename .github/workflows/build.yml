@@ -14,6 +14,7 @@ jobs:
         shell: bash
       - name: Install USD
         run: |
+          pip install PySide
           python USD/build_scripts/build_usd.py ../USD-build
         shell: bash
       - name: Install cmake

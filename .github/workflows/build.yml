@@ -16,6 +16,8 @@ jobs:
       - name: Install Python deps
         run: |
           pip install PyOpenGL PySide2
+      - name: Install usd
+        run: |
           python USD/build_scripts/build_usd.py "C:\Program Files\USD"
         shell: cmd
       - name: Install cmake

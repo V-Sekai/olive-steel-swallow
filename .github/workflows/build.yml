@@ -12,9 +12,9 @@ jobs:
         run: |
           git clone -b release https://github.com/PixarAnimationStudios/USD.git
         shell: bash        
-      - name: Install USD
+      - name: Install Python deps
         run: |
-          pip install PySide2
+          pip install PyOpenGL PySide2
           python USD/build_scripts/build_usd.py ../USD-build
         shell: bash
       - name: Install cmake

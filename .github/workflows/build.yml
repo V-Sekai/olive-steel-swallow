@@ -12,11 +12,12 @@ jobs:
         run: |
           git clone -b release https://github.com/PixarAnimationStudios/USD.git
         shell: bash        
+      - uses: ilammy/msvc-dev-cmd@v1
       - name: Install Python deps
         run: |
           pip install PyOpenGL PySide2
-          python USD/build_scripts/build_usd.py ../USD-build
-        shell: bash
+          python USD/build_scripts/build_usd.py "C:\Program Files\USD"
+        shell: cmd
       - name: Install cmake
         run: |
           mkdir build

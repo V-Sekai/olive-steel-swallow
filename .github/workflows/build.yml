@@ -18,7 +18,7 @@ jobs:
           python-version: 3.4
       - name: Install USD
         run: |
-          pip install PySide
+          pip install PySide2
           python USD/build_scripts/build_usd.py ../USD-build
         shell: bash
       - name: Install cmake

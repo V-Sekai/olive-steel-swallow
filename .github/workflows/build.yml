@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
+      - uses: seanmiddleditch/gha-setup-ninja@master
       - name: Install cmake
         run: |
           mkdir build

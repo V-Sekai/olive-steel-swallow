@@ -6,6 +6,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - uses: ilammy/setup-nasm@v1
       - uses: seanmiddleditch/gha-setup-ninja@master
       - name: Install cmake
         run: |

@@ -12,10 +12,6 @@ jobs:
         run: |
           git clone -b release https://github.com/PixarAnimationStudios/USD.git
         shell: bash        
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.4
       - name: Install USD
         run: |
           pip install PySide2

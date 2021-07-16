@@ -27,7 +27,7 @@ jobs:
           boost_version: 1.73.0
       - name: Install usd
         run: |
-          python USD/build_scripts/build_usd.py "C:\Program Files\USD"
+          python USD/build_scripts/build_usd.py "USD-build"
         shell: cmd
       - name: Install cmake
         run: |

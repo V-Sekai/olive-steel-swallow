@@ -16,6 +16,15 @@ jobs:
       - name: Install Python deps
         run: |
           pip install PyOpenGL PySide2
+
+      - name: Install boost
+        uses: MarkusJx/install-boost@v1.0.1
+        id: install-boost
+        with:
+          # REQUIRED: Specify the required boost version
+          # A list of supported versions can be found here: 
+          # https://github.com/actions/boost-versions/blob/main/versions-manifest.json
+          boost_version: 1.73.0
       - name: Install usd
         run: |
           python USD/build_scripts/build_usd.py "C:\Program Files\USD"
